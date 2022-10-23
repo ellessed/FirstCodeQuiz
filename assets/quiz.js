@@ -73,10 +73,11 @@ function displayQuestion() {
   }
   var question = questions[currentQuestion];
   document.getElementById("question").textContent = question.title;
+  console.log(question.subject);
   options.innerHTML = "";
   for (var i = 0; i < question.options.length; i++) {
     var option = document.createElement("div");
-    options.textContent = question.options[i];
+    option.textContent = question.options[i];
     option.onclick = onSelectAnswer;
     option.classList.add("option");
 
