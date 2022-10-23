@@ -74,9 +74,9 @@ function displayQuestion() {
   var question = questions[currentQuestion];
   document.getElementById("question").textContent = question.title;
   options.innerHTML = "";
-  for (var i = 0; i < questions.options.length; i++) {
+  for (var i = 0; i < question.options.length; i++) {
     var option = document.createElement("div");
-    options.textContent = questions.options[i];
+    options.textContent = question.options[i];
     option.onclick = onSelectAnswer;
     option.classList.add("option");
 
