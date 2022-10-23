@@ -42,9 +42,10 @@ function onViewScores(e) {
 }
 
 function onSelectAnswer(e) {
-  var rightAnswer = questions[presentQuestion].answer;
+  var rightAnswer = questions[presentQuestion].answers;
   var userAnswer = e.target.textContent;
-
+  console.log(rightAnswer);
+  console.log(userAnswer);
   if (rightAnswer === userAnswer) {
     score++;
     displayMessage("Correct");
@@ -65,14 +66,13 @@ function displayMessage(msg) {
 }
 // Increment to get the next question
 function displayQuestion() {
-  presentQuestion++;
   console.log("current question is" + presentQuestion);
   if (presentQuestion >= questions.length) {
     stopGame();
     return;
   }
-  var question = questions[currentQuestion];
-  document.getElementById("question").textContent = question.title;
+  var question = questions[presentQuestion];
+  document.getElementById("question").textContent = question.subject;
   console.log(question.subject);
   options.innerHTML = "";
   for (var i = 0; i < question.options.length; i++) {
@@ -83,11 +83,12 @@ function displayQuestion() {
 
     options.appendChild(option);
   }
+  presentQuestion++;
 }
 
 function onStartGame() {
   secondsLeft = 75;
-  currentQuestion = 0;
+  presentQuestion = 0;
   score = 0;
   countdownTimer = setInterval(function () {
     if (secondsLeft > 0) {
