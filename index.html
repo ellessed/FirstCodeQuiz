@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Code Quiz 2022</title>
   </head>
   <body>
-    <main>
+    <header>
+      <div id="timer"></div>
+    </header>
+    <main class="main-container">
       <!-- WelcomeQuiz-->
-      <div id="greeting">
+      <div id="greeting" class="individual-container">
         <h1>Welcome to the Code Quiz</h1>
         <button id="beginQuiz" class="copy">Begin Quiz</button>
       </div>
       <!-- MainQuiz -->
-      <div id="CodeQuiz" class="test">
-        <div id="questions"></div>
+      <div id="code-quiz" class="test">
+        <div id="question"></div>
         <div id="options"></div>
         <div id="message"></div>
       </div>
       <!-- Results -->
-      <div id="end" clas="test">
+      <div id="end" class="individual-container">
         <div id="summary"></div>
         <buton id="viewScores" class="copy">View all High Scores</buton>
         <input type="text" id="name" placeholder="Enter your name" />
