@@ -13,7 +13,7 @@ var message = document.getElementById("message");
 var timer = document.getElementById("timer");
 var summary = document.getElementById("summary");
 
-var timerLeft = 0;
+var secondsLeft = 0;
 var score = 0;
 var presentQuestion = 0;
 var countdownTimer;
@@ -52,9 +52,8 @@ function onSelectAnswer(e) {
   } else {
     score--;
     displayMessage("Incorrect");
+    secondsLeft -= 5;
   }
-
-  xx;
 
   // Call up the next question
   displayQuestion();
