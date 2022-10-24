@@ -24,4 +24,4 @@ THEN I can save my initials and score
 
 ## Code Quiz
 
-(assets/images/screencapture.png)
+![](assets/images/screencapture.png)
