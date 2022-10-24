@@ -54,6 +54,8 @@ function onSelectAnswer(e) {
     displayMessage("Incorrect");
   }
 
+  xx;
+
   // Call up the next question
   displayQuestion();
 }
