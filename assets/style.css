@@ -14,3 +14,20 @@
   width: 50vw;
   height: 20vh;
 }
+
+#timer,
+#highscores {
+  background-color: var(--button-colour);
+  padding: 16px;
+  border-radius: 25px;
+  color: red;
+  font-size: 1.2em;
+}
+
+#greeting {
+  background-color: rgb(129, 245, 198);
+  padding: 16px;
+  border-radius: 25px;
+  color: rgb(23, 0, 5);
+  font-size: 1.2em;
+}
