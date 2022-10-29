@@ -23,7 +23,7 @@ var countdownTimer;
 // Hide the question and display the result
 // Show the Score
 function endGame() {
-  stopInterval(countdownTimer);
+  clearfInterval(countdownTimer);
   timer.textContent = "";
   codeQuiz.style.display = "none";
   end.style.display = "flex";
