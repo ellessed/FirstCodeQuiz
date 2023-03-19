@@ -1,33 +1,134 @@
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-}
-.individual-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50vw;
-  height: 20vh;
+* {
+  font-family: "Fjalla One", sans-serif;
+  background-color: rgb(36, 38, 38);
 }
 
-#timer,
-#highscores {
-  background-color: var(--button-colour);
-  padding: 16px;
-  border-radius: 25px;
+.area {
+  width: 500px;
+  min-height: 500px;
+  margin: 200px auto;
+  padding: 75px;
+}
+
+h1,
+p {
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  color: rgb(246, 246, 246);
+  background: blue;
+  border-radius: 10px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.btn:hover {
+  background: green;
+  border-color: green;
+}
+.btn-big {
+  font-size: xx-large;
+}
+
+.btn-again {
+  margin-top: 48px;
+}
+
+.timer {
+  border: 5px solid rgb(255, 255, 255);
   color: red;
-  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: 175px;
+  left: 1300px;
+  font-size: x-large;
 }
 
-#greeting {
-  background-color: rgb(129, 245, 198);
+.question {
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+}
+
+.option {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(154, 2, 2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(43, 43, 200);
+  font-size: large;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: rgb(238, 247, 140);
+  border-color: rgb(238, 247, 140);
+}
+
+.message {
+  font-weight: bold;
+  font-size: xx-large;
+  background: red;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.correct {
+  background: green;
+}
+
+.summary {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.initials {
+  width: 100%;
   padding: 16px;
-  border-radius: 25px;
-  color: rgb(23, 0, 5);
-  font-size: 1.2em;
+  box-sizing: border-box;
+  margin-top: 48px;
+  margin-bottom: 8px;
+  font-size: x-large;
+  color: rgb(203, 0, 0);
+}
+
+.scores {
+  font-size: x-large;
+  width: 100%;
+  margin-bottom: 64px;
+  border-collapse: collapse;
+}
+
+.scores th {
+  border-bottom: 3px solid rgb(195, 32, 32);
+  padding: 8px;
+}
+
+.scores td {
+  text-align: center;
+  padding: 8px;
+}
+
+.score-item {
+  font-size: x-large;
+  text-align: center;
 }
