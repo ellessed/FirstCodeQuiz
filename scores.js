@@ -1,5 +1,5 @@
 var scoresheet = document.getElementById("scoresheet");
-var backtoQuiz = document.getElementById("backtoQuiz");
+var backtoQuiz = document.getElementById("backQuiz");
 
 function onBackToQuiz() {
   window.location.href = "index.html";
