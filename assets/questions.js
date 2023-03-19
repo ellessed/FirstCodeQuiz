@@ -1,43 +1,43 @@
 // list of questions, choices and answers
 var questions = [
   {
-    subject: "What does HTML stand for",
-    options: [
+    subject: "What does HTML stand for:",
+    choices: [
       "Hyper Text Markup Language",
       "Home Tool Markup Language",
       "Hyperlinks and Text Markup Language",
     ],
-    answers: "Hyper Text Markup Language",
+    answer: "Hyper Text Markup Language",
   },
   {
     subject: "What does CSS stand for",
-    options: [
+    choices: [
       "Creators Style Sheets",
       "Computer Style Sheets",
       "Cascading Style Sheets",
       "Colorful Style Sheet",
     ],
-    answers: "Cascading Style Sheets",
+    answer: "Cascading Style Sheets",
   },
   {
-    subject: "Arrays in JavaScript can be used to store ___.",
-    options: [
+    subject: "Arrays in JavaScript can be used to store ____.",
+    choices: [
       "other arrays",
       "numbers and strings",
       "booleans",
       "all of the above",
     ],
-    answers: "all of the above",
+    answer: "all of the above",
   },
   {
     subject: "Which of the following is not a programming language",
-    options: ["Java", "Python", "TypeScript", "Anaconda"],
-    answers: "Anaconda",
+    choices: ["Java", "Python", "TypeScript", "Anaconda"],
+    answer: "Anaconda",
   },
   {
     subject:
-      "A useful tool used during development and debugging for printing content to the debugger is: ",
-    options: ["Local Storage", "JavaScript", "Console.log", "For loops"],
-    answers: "Console.log",
+      "A  useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ["Local Storage", "JavaScript", "Console.log", "For loops"],
+    answer: "Console.log",
   },
 ];
