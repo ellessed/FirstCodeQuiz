@@ -4,40 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Code Quiz 2022</title>
   </head>
-  <body>
-    <header>
-      <div id="highscores">
-        <a href="/scores.html"> High Scores </a>
-      </div>
 
-      <div id="timer"></div>
+  <body class="area">
+    <header>
+      <div id="timer" class="timer hidden"></div>
     </header>
-    <main class="main-container">
-      <!-- WelcomeQuiz-->
-      <div id="greeting" class="individual-container">
+    <!-- WelcomeQuiz-->
+    <main>
+      <div id="greeting">
         <h1>Welcome to the Code Quiz</h1>
-        <button id="beginQuiz" class="copy">Begin Quiz</button>
+        <p>Are you ready?</p>
+        <button id="beginQuiz" class="btn btn-big">Lets Begin!</button>
       </div>
-      <!-- MainQuiz -->
-      <div id="code-quiz" class="test">
-        <div id="question"></div>
+      <!-- Main -->
+      <div id="message" class="message visually-hidden">
+        Waiting for answers
+      </div>
+      <div id="quiz">
+        <div id="question" class="question"></div>
         <div id="options"></div>
-        <div id="message"></div>
       </div>
       <!-- Results -->
-      <div id="end" class="individual-container">
-        <div id="summary"></div>
-        <buton id="viewScores" class="copy">View all High Scores</buton>
-        <input type="text" id="name" placeholder="Enter your name" />
-        <button id="saveScore" class="copy">Save Score</button>
-        <button id="playAgain" class="copy">Play Again</button>
+      <div id="end" class="hidden">
+        <div id="summary" class="summary"></div>
+        <button id="viewScores" class="btn">View All High Scores</button>
+        <input
+          type="text"
+          id="initials"
+          class="initials"
+          placeholder="Enter your name"
+        />
+        <button id="saveScore" class="btn">Save Score</button>
+        <button id="playAgain" class="btn btn-again">Play Again</button>
       </div>
     </main>
   </body>
   <!-- ScriptToQuestions and Quiz link -->
-  <script src="assets/questions.js"></script>
-  <script src="assets/quiz.js"></script>
+  <script src="./assets/questions.js"></script>
+  <script src="./assets/quiz.js"></script>
 </html>
