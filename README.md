@@ -24,7 +24,9 @@ THEN I can save my initials and score
 
 # # Code Quiz
 
-![](assets/images/screencapture.png)
+![](assets/images/CodeQuiz1.jpg)
+![](assets/images/CodeQuiz2.jpg)
+![](assets/images/CodeQuiz3.jpg)
 
 ## Deployed Link
 
