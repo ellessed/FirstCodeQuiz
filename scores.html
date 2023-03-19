@@ -1,31 +1,38 @@
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Code Quiz 2022 </title>
-    <!-- Add links to css below  -->
-</head>
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body class="area">
     <header>
-        <div id= "highscores">
-            <!-- Add links to index.html below  -->
-            <a href="/">Back to Quiz</a>
-        </div>
+      <div id="highscores"></div>
     </header>
     <main>
-        <div id="result" class="flex">
-            <div id="scoresheet">
-                <div class="result">
-                <div class="score-item">Player</div>
-                <div class="score-item">Score</div>
-                </div>
-            </div>
-            <buton id="backtoQuiz" class="btn"> Back to Quiz</buton>
+      <div id="result">
+        <div id="scoresheet">
+          <table class="scores">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="scores"></tbody>
+          </table>
         </div>
+        <button id="backQuiz" class="btn btn-big">Back to Quiz</button>
+      </div>
     </main>
-</body>
-<!-- add link to score js here -->
-<script src="/assets" 
+  </body>
+  <script src="scores.js"></script>
+</html>
